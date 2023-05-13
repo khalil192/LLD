@@ -1,0 +1,15 @@
+
+
+
+
+
+vehicle 
+    - reg no
+    - type
+    - properties -> id, color
+
+ticket class
+    p spot id
+    vehicle id
+    beginTime
+    endTime
