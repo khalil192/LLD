@@ -1,15 +1,70 @@
 
 
+Classes and their functionalities
+
+Entry 
+    
+    - id
+
+    - CheckParkingSlotStatus(parking_slot_id)
+    - IssueTicket(vehicle) - returns ticket 
 
 
+Exit 
+    - id    
 
-vehicle 
+    - AcceptPaymentAndCloseTicket(vehicle)
+
+
+ParkingSlot 
+    -id
+    - floor number
+    - capacity
+    - isVacant
+    - costPerMinute
+
+    - bookParkingSlot()
+    - releaseParkingSlot()
+
+Vehicle class
+    - id
     - reg no
     - type
-    - properties -> id, color
+    - properties -> id, color   
+    - ticket associated id
 
-ticket class
-    p spot id
-    vehicle id
-    beginTime
-    endTime
+Ticket class
+    - id
+    - parking slot  
+    - vehicle  
+    - beginTime
+    - endTime
+    - Entry Gate
+    - Exit Gate
+    - isPaid
+
+    - GetTotalCost()
+
+
+ParkingFloor
+    - id
+    - List of Parking slots
+    - Display Board
+
+    - getAnEmptySlot(capacity) -> returns first empty slot that has enough capacity
+    - addNewParkingSlot()
+    - showFloorInfo() -> prints info from floor
+
+Parking Lot
+   - id and name, address
+   - List of Parking Floors
+   - Global Display Board
+   - List of Entry's
+   - List of Exit's
+
+   - AddParkingFloor()
+   - ShowParkingLotInfo() -> prints empty & slots count in the entire parking slot
+   - ParkVehicle(entryGate, vehicle) 
+   - ReleaseVehicle(exitGate, vehicle)
+   - CheckStatus(parkingLotId)
+
