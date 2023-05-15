@@ -1,0 +1,30 @@
+
+Snakes & Ladders LLD
+
+Game
+    Board() -> 1d array to denote positions of players
+    Snakes -> map -> snakes[x] = y ; x is snake's head and y is snake's tail ; x > y
+    Ladder -> map -> ladders[x] = y ; x < y
+    Players -> Array of Player
+    Dice -> instance of Dice
+    winners -> initially empty will be filled with winner list
+    bool endOnFirstPlayer -> true/false
+    NumMovesYet -> total number of moves done till now -> useful for getting current player
+
+
+    - StartGame()
+    - EndGame()
+    - getCurrentPlayer()
+    - getWinners()
+    - ResetGame()
+    - MakeAMove()
+    
+
+Player
+    -id
+    -name
+    -positionOnBoard
+    
+
+Dice
+  -RollDice(numFaces, numDices)
